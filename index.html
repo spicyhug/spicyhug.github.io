@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Flip Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div class="age-verification-overlay" id="ageVerificationOverlay">
+        <div class="age-verification-modal">
+            <h2>🔞 Age Verification Required</h2>
+            <p>This content is intended for adults only. You must be 21 years or older to access this game.</p>
+            <p><strong>Are you 21 years of age or older?</strong></p>
+            <div class="age-verification-buttons">
+                <button class="age-btn yes" onclick="confirmAge(true)">Yes, I'm 21+</button>
+                <button class="age-btn no" onclick="confirmAge(false)">No, I'm under 21</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="mainContent" style="display: none;">
+        <h1>Intimacy Deck</h1>
+
+        <!-- Group Information -->
+        <div class="group-info" id="groupInfo">
+            <span class="group-indicator">Group 1 of 2</span>
+            <span class="group-color">🔥 Red Group</span>
+            <span class="group-progress">0/10 cards opened</span>
+        </div>
+
+        <div class="cards-container" id="cardsContainer">
+            <!-- Cards will be generated here -->
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation" id="navigation">
+            <button class="nav-btn group-nav" onclick="goToPreviousGroup()" title="Previous Group"><img src="image/grp-prev.svg"/></button>
+            <button class="nav-btn" onclick="previousCard()" id="prevBtn"><img src="image/prev.svg"/></button>
+            <span class="card-indicator" id="cardIndicator">Card: 1 | 0/10 opened</span>
+            <button class="nav-btn" onclick="resetAllCards()" title="Reset All"><img src="image/reset.svg"/></button>
+            <button class="nav-btn" onclick="nextCard()" id="nextBtn"><img src="image/next.svg"/></button>
+            <button class="nav-btn group-nav" onclick="goToNextGroup()" title="Next Group"><img src="image/grp-next.svg"/></button>
+        </div>
+    </div>
+
+    <script src="cardData.js"></script>
+    <script src="groupColors.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
