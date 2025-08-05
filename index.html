@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpicyHug</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div class="age-verification-overlay" id="ageVerificationOverlay">
+        <div class="age-verification-modal">
+            <h2>🔞 Age Verification Required</h2>
+            <p>This content is intended for adults only. You must be 21 years or older to access these games.</p>
+            <p><strong>Are you 21 years of age or older?</strong></p>
+            <div class="age-verification-buttons">
+                <button class="age-btn yes" onclick="confirmAge(true)">Yes, I'm 21+</button>
+                <button class="age-btn no" onclick="confirmAge(false)">No, I'm under 21</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-container" id="mainContent" style="display: none;">
+        <!-- Header -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">SpicyHug</h1>
+                <p class="hero-subtitle">Strengthen your connection through playful exploration</p>
+                <div class="hero-decoration">💖 ✨ 🔥 ✨ 💖</div>
+            </div>
+        </header>
+
+        <!-- Games Grid -->
+        <main class="games-section">
+            <div class="container">
+                <h2 class="section-title">Choose Your Adventure</h2>
+                
+                <div class="games-grid">
+                    <!-- Card Game 1 -->
+                    <div class="game-card" onclick="navigateToGame('game-1.html')">
+                        <div class="game-icon">👩‍❤️‍💋‍👨</div>
+                        <h3 class="game-title">Intimacy Deck</h3>
+                        <p class="game-description">Discover new depths of connection with intimate challenges and conversations.</p>
+                        <div class="game-stats">
+                            <span class="stat">40+ Cards</span>
+                            <span class="stat">4 Groups</span>
+                        </div>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+
+                    <!-- Coming Soon Games -->
+                    <div class="game-card" onclick="navigateToGame('game-2.html')">
+                        <div class="game-icon">💋</div>
+                        <h3 class="game-title">Foreplay Fever</h3>
+                        <p class="game-description">Test how well you know each other with fun and romantic questions.</p>
+                         <div class="game-stats">
+                            <span class="stat">40+ Cards</span>
+                            <span class="stat">4 Groups</span>
+                        </div>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <div class="game-card coming-soon">
+                        <div class="game-icon">🎯</div>
+                        <h3 class="game-title">Truth or Dare</h3>
+                        <p class="game-description">Classic game with a romantic twist for couples.</p>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+
+                    <div class="game-card coming-soon">
+                        <div class="game-icon">🌙</div>
+                        <h3 class="game-title">Date Night Ideas</h3>
+                        <p class="game-description">Random date night suggestions to spark romance.</p>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+
+                    <div class="game-card coming-soon">
+                        <div class="game-icon">💌</div>
+                        <h3 class="game-title">Love Letters</h3>
+                        <p class="game-description">Prompts to write heartfelt messages to each other.</p>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+
+                    <div class="game-card coming-soon">
+                        <div class="game-icon">🎪</div>
+                        <h3 class="game-title">Fantasy Wheel</h3>
+                        <p class="game-description">Spin the wheel of intimate adventures and fantasies.</p>
+                        <div class="coming-soon-badge">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 SpicyHug. For adults 21+ only.</p>
+                <p class="disclaimer">Please play responsibly and with mutual consent.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index-script.js"></script>
+</body>
+</html>
